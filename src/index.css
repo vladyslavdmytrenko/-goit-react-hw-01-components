@@ -1,4 +1,13 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css'); /* bring in normalize.css styles */
+
+:root {
+  --primary-text-color: #122236;
+  --secondary-text-color: #82909e;
+  --primary-background-color: #e7ecf2;
+  --secondary-background-color: #f3f6f9;
+  --primary-border-color: #e4e9f0;
+  --fw-bold: 700;
+}
 
 body {
   margin: 0;
@@ -7,9 +16,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-background-color);
+  font-size: 12px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
